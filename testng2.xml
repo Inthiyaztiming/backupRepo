@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="NPA Project">
+	<test name="NPA">
+		<groups>
+				<run>
+				<include name="positive flow">
+					</include>
+				</run>
+		</groups>
+		<classes>
+			<class name="Tests.UPPRPB"/>
+		</classes>
+	</test>
+</suite> 
