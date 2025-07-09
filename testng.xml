@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Ifinish Project">
+	<listeners>
+		<listener class-name="BaseTest.Listeners"></listener>
+	</listeners>
+	<test name="ifinish">
+		<classes>
+			<class name="TestCases.LoginPage" />
+			<class name="TestCases.ForgotPasswordPage" />
+			<class name="TestCases.MarathonSelectionPage" />
+			<class name="TestCases.AddParticipantsPage" />
+			<class name="TestCases.ParticipantsEditDeletePage" />
+			<class name="TestCases.PaymentSummaryPage" />
+
+
+		</classes>
+	</test>
+</suite>

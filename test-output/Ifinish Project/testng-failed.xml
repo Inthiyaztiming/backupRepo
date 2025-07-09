@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Ifinish Project]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="BaseTest.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="ifinish(failed)">
+    <classes>
+      <class name="TestCases.AddParticipantsPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="getExtentReportObject"/>
+          <include name="participantcountafteraddyes"/>
+        </methods>
+      </class> <!-- TestCases.AddParticipantsPage -->
+      <class name="TestCases.ParticipantsEditDeletePage">
+        <methods>
+          <include name="setUp"/>
+          <include name="edithealthhistory"/>
+          <include name="teardown"/>
+          <include name="getExtentReportObject"/>
+        </methods>
+      </class> <!-- TestCases.ParticipantsEditDeletePage -->
+    </classes>
+  </test> <!-- ifinish(failed) -->
+</suite> <!-- Failed suite [Ifinish Project] -->

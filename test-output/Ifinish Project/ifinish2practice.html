@@ -1,0 +1,641 @@
+<html>
+<head>
+<title>TestNG:  ifinish2practice</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ifinish2practice</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>60/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 07 10:46:31 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>1280 seconds (1280204 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.edithealthhistory()'><b>edithealthhistory</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the healthhistory in participants details</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Edit&apos;]&quot;}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [54dddcf61c6fb2c74ca5bceb9a63e9c1, findElement {using=xpath, value=//button[normalize-space()=&apos;Edit&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\TTIPL\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56852}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56852/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 54dddcf61c6fb2c74ca5bceb9a63e9c1
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at BaseTest.BaseTestifinish.editparticipantsreusbale(BaseTestifinish.java:155)
+	at TestCases.ParticipantsEditDeletePage.edithealthhistory(ParticipantsEditDeletePage.java:237)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace587208531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace587208531'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Edit&apos;]&quot;}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [54dddcf61c6fb2c74ca5bceb9a63e9c1, findElement {using=xpath, value=//button[normalize-space()=&apos;Edit&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\TTIPL\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56852}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56852/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 54dddcf61c6fb2c74ca5bceb9a63e9c1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at BaseTest.BaseTestifinish.editparticipantsreusbale(BaseTestifinish.java:155)
+	at TestCases.ParticipantsEditDeletePage.edithealthhistory(ParticipantsEditDeletePage.java:237)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>27</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editgender()'><b>editgender</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the gender in participants details</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@id=&apos;Are You filling for self?&apos;])[1]&quot;}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [42b3f949d9099638d7d5d5cdbd63cc13, findElement {using=xpath, value=(//input[@id=&apos;Are You filling for self?&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\TTIPL\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56795/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 42b3f949d9099638d7d5d5cdbd63cc13
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at BaseTest.BaseTestifinish.editparticipantsreusbale(BaseTestifinish.java:140)
+	at TestCases.ParticipantsEditDeletePage.editgender(ParticipantsEditDeletePage.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace96411143", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace96411143'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@id=&apos;Are You filling for self?&apos;])[1]&quot;}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [42b3f949d9099638d7d5d5cdbd63cc13, findElement {using=xpath, value=(//input[@id=&apos;Are You filling for self?&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\TTIPL\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56795/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 42b3f949d9099638d7d5d5cdbd63cc13
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at BaseTest.BaseTestifinish.editparticipantsreusbale(BaseTestifinish.java:140)
+	at TestCases.ParticipantsEditDeletePage.editgender(ParticipantsEditDeletePage.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>19</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editemail()'><b>editemail</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the email in participants details</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Edit&apos;]&quot;}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb0700d957f9adfb5eb98757e8349c56, findElement {using=xpath, value=//button[normalize-space()=&apos;Edit&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\TTIPL\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56673}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56673/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb0700d957f9adfb5eb98757e8349c56
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at BaseTest.BaseTestifinish.editparticipantsreusbale(BaseTestifinish.java:155)
+	at TestCases.ParticipantsEditDeletePage.editemail(ParticipantsEditDeletePage.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1530193853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1530193853'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Edit&apos;]&quot;}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb0700d957f9adfb5eb98757e8349c56, findElement {using=xpath, value=//button[normalize-space()=&apos;Edit&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\TTIPL\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56673}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56673/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb0700d957f9adfb5eb98757e8349c56
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at BaseTest.BaseTestifinish.editparticipantsreusbale(BaseTestifinish.java:155)
+	at TestCases.ParticipantsEditDeletePage.editemail(ParticipantsEditDeletePage.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>27</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.ForgotPasswordPage.forgotpassword()'><b>forgotpassword</b><br>Test class: TestCases.ForgotPasswordPage<br>Test method: Verify by clicking on forgot password </td>
+<td></td>
+<td>4</td>
+<td>TestCases.ForgotPasswordPage@600b0b7</td></tr>
+<tr>
+<td title='TestCases.ForgotPasswordPage.regemailforgotpassword()'><b>regemailforgotpassword</b><br>Test class: TestCases.ForgotPasswordPage<br>Test method: Verify clicking on submit button by entering already registered email in forgot password popup page </td>
+<td></td>
+<td>5</td>
+<td>TestCases.ForgotPasswordPage@600b0b7</td></tr>
+<tr>
+<td title='TestCases.MarathonSelectionPage.marathonselectiontext()'><b>marathonselectiontext</b><br>Test class: TestCases.MarathonSelectionPage<br>Test method: Verify the same clicked marathon is getting opened</td>
+<td></td>
+<td>13</td>
+<td>TestCases.MarathonSelectionPage@425357dd</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editArea()'><b>editArea</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the Area in participants details</td>
+<td></td>
+<td>24</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.MarathonSelectionPage.selectmarathoncount()'><b>selectmarathoncount</b><br>Test class: TestCases.MarathonSelectionPage<br>Test method: Verify user can select the count of the marathon from the dropdown</td>
+<td></td>
+<td>14</td>
+<td>TestCases.MarathonSelectionPage@425357dd</td></tr>
+<tr>
+<td title='TestCases.LoginPage.validuserinvalidpassword()'><b>validuserinvalidpassword</b><br>Test class: TestCases.LoginPage<br>Test method: Verify on clicking submit button by entering registered username and invalid password</td>
+<td></td>
+<td>5</td>
+<td>TestCases.LoginPage@62f87c44</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editstreetaddress()'><b>editstreetaddress</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the streetaddress in participants details</td>
+<td></td>
+<td>22</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.MarathonSelectionPage.checkpriceoncardmarathon()'><b>checkpriceoncardmarathon</b><br>Test class: TestCases.MarathonSelectionPage<br>Test method: Verify the price of the marathon shown on the price card</td>
+<td></td>
+<td>12</td>
+<td>TestCases.MarathonSelectionPage@425357dd</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editlastname()'><b>editlastname</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the lastname in participants details</td>
+<td></td>
+<td>24</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.ForgotPasswordPage.notregemailforgotpassword()'><b>notregemailforgotpassword</b><br>Test class: TestCases.ForgotPasswordPage<br>Test method: Verify clicking on submit button by entering email which is not registered in forgot password popup page </td>
+<td></td>
+<td>4</td>
+<td>TestCases.ForgotPasswordPage@600b0b7</td></tr>
+<tr>
+<td title='TestCases.AddParticipantsPage.withoutnewdataclickingyes()'><b>withoutnewdataclickingyes</b><br>Test class: TestCases.AddParticipantsPage<br>Test method: Verify clicking on save details button without entering any new data data by selecting Yes in Are You filling for self?</td>
+<td></td>
+<td>13</td>
+<td>TestCases.AddParticipantsPage@70eecdc2</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editmobilenumber()'><b>editmobilenumber</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the mobile number in participants details</td>
+<td></td>
+<td>24</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.PaymentSummaryPage.pricecheck()'><b>pricecheck</b><br>Test class: TestCases.PaymentSummaryPage<br>Test method: Verify the price shown in the payment summary page</td>
+<td></td>
+<td>22</td>
+<td>TestCases.PaymentSummaryPage@781e7326</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.closeeditparticipants()'><b>closeeditparticipants</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify the edit page should be closed on clicking close button in edit participant details page</td>
+<td></td>
+<td>25</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.MarathonSelectionPage.checkpricetotalcardmarathon()'><b>checkpricetotalcardmarathon</b><br>Test class: TestCases.MarathonSelectionPage<br>Test method: Verify the price of the marathon shown on the total card</td>
+<td></td>
+<td>14</td>
+<td>TestCases.MarathonSelectionPage@425357dd</td></tr>
+<tr>
+<td title='TestCases.PaymentSummaryPage.registerbutton()'><b>registerbutton</b><br>Test class: TestCases.PaymentSummaryPage<br>Test method: Verify payment summary page is opened on clicking register button</td>
+<td></td>
+<td>21</td>
+<td>TestCases.PaymentSummaryPage@781e7326</td></tr>
+<tr>
+<td title='TestCases.PaymentSummaryPage.viewdetails()'><b>viewdetails</b><br>Test class: TestCases.PaymentSummaryPage<br>Test method: Verify the participants page is opened on clicking view details</td>
+<td></td>
+<td>23</td>
+<td>TestCases.PaymentSummaryPage@781e7326</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editbloodgroup()'><b>editbloodgroup</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the bloodgroup in participants details</td>
+<td></td>
+<td>24</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.MarathonSelectionPage.regcountcomparison()'><b>regcountcomparison</b><br>Test class: TestCases.MarathonSelectionPage<br>Test method: Verify registration count shown in the sticky panel is as same in the participants panel</td>
+<td></td>
+<td>14</td>
+<td>TestCases.MarathonSelectionPage@425357dd</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.deleteparticipants()'><b>deleteparticipants</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify the added participant should be deleted on clicking delete button</td>
+<td></td>
+<td>26</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.PaymentSummaryPage.orgtermsconditions()'><b>orgtermsconditions</b><br>Test class: TestCases.PaymentSummaryPage<br>Test method: Verify the organiser terms and conditions popup page should be opened in the same page on clicking link</td>
+<td></td>
+<td>22</td>
+<td>TestCases.PaymentSummaryPage@781e7326</td></tr>
+<tr>
+<td title='TestCases.AddParticipantsPage.addparticipantcloseicon()'><b>addparticipantcloseicon</b><br>Test class: TestCases.AddParticipantsPage<br>Test method: Verify the close icon in add participant page</td>
+<td></td>
+<td>16</td>
+<td>TestCases.AddParticipantsPage@70eecdc2</td></tr>
+<tr>
+<td title='TestCases.MarathonSelectionPage.proceedmarathon()'><b>proceedmarathon</b><br>Test class: TestCases.MarathonSelectionPage<br>Test method: Verify user participants panel is shown after clicking proceed button	</td>
+<td></td>
+<td>14</td>
+<td>TestCases.MarathonSelectionPage@425357dd</td></tr>
+<tr>
+<td title='TestCases.PaymentSummaryPage.ifinishtermsconditions()'><b>ifinishtermsconditions</b><br>Test class: TestCases.PaymentSummaryPage<br>Test method: Verify the Ifinish terms and conditions popup page should be opened in the same page on clicking link</td>
+<td></td>
+<td>23</td>
+<td>TestCases.PaymentSummaryPage@781e7326</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editpincode()'><b>editpincode</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the pincode in participants details</td>
+<td></td>
+<td>24</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.PaymentSummaryPage.proceedpaymentbuttonterms1()'><b>proceedpaymentbuttonterms1</b><br>Test class: TestCases.PaymentSummaryPage<br>Test method: Verify the proceed to payment button is disabled if we select only organiser terms and conditions not the ifinish terms and conditions</td>
+<td></td>
+<td>23</td>
+<td>TestCases.PaymentSummaryPage@781e7326</td></tr>
+<tr>
+<td title='TestCases.MarathonSelectionPage.maxmarathoncount()'><b>maxmarathoncount</b><br>Test class: TestCases.MarathonSelectionPage<br>Test method: Verify user can add the marathon count using add button</td>
+<td></td>
+<td>15</td>
+<td>TestCases.MarathonSelectionPage@425357dd</td></tr>
+<tr>
+<td title='TestCases.PaymentSummaryPage.proceedpaymentbuttonterms2()'><b>proceedpaymentbuttonterms2</b><br>Test class: TestCases.PaymentSummaryPage<br>Test method: Verify the proceed to payment button is disabled if we select only IFINISH terms and conditions not the organiser terms and conditions</td>
+<td></td>
+<td>22</td>
+<td>TestCases.PaymentSummaryPage@781e7326</td></tr>
+<tr>
+<td title='TestCases.LoginPage.invaliduservalidpassword()'><b>invaliduservalidpassword</b><br>Test class: TestCases.LoginPage<br>Test method: Verify on clicking submit button by entering invalid username and registered password</td>
+<td></td>
+<td>5</td>
+<td>TestCases.LoginPage@62f87c44</td></tr>
+<tr>
+<td title='TestCases.PaymentSummaryPage.orgtermsconditionsclose()'><b>orgtermsconditionsclose</b><br>Test class: TestCases.PaymentSummaryPage<br>Test method: Verify the close icon in organiser terms and conditions popup page </td>
+<td></td>
+<td>24</td>
+<td>TestCases.PaymentSummaryPage@781e7326</td></tr>
+<tr>
+<td title='TestCases.AddParticipantsPage.participantcountbeforeadd()'><b>participantcountbeforeadd</b><br>Test class: TestCases.AddParticipantsPage<br>Test method: Verify participants count shown in the add new participant panel before adding the participant</td>
+<td></td>
+<td>17</td>
+<td>TestCases.AddParticipantsPage@70eecdc2</td></tr>
+<tr>
+<td title='TestCases.LoginPage.submitwithblankpassword()'><b>submitwithblankpassword</b><br>Test class: TestCases.LoginPage<br>Test method: Verify on clicking submit button by entering registered email and leaving password as blank</td>
+<td></td>
+<td>5</td>
+<td>TestCases.LoginPage@62f87c44</td></tr>
+<tr>
+<td title='TestCases.MarathonSelectionPage.eventselection()'><b>eventselection</b><br>Test class: TestCases.MarathonSelectionPage<br>Test method: Verify the same clicked event is getting opened</td>
+<td></td>
+<td>11</td>
+<td>TestCases.MarathonSelectionPage@425357dd</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editparticipants()'><b>editparticipants</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify the edit page should be opened after clicking edit button in adding the participants</td>
+<td></td>
+<td>23</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.AddParticipantsPage.addparticipantclosebutton()'><b>addparticipantclosebutton</b><br>Test class: TestCases.AddParticipantsPage<br>Test method: Verify the close button in add participant page</td>
+<td></td>
+<td>15</td>
+<td>TestCases.AddParticipantsPage@70eecdc2</td></tr>
+<tr>
+<td title='TestCases.AddParticipantsPage.participantcountafteraddno()'><b>participantcountafteraddno</b><br>Test class: TestCases.AddParticipantsPage<br>Test method: Verify participants count shown in the add new participant panel after adding the participant by self filling as NO</td>
+<td></td>
+<td>25</td>
+<td>TestCases.AddParticipantsPage@70eecdc2</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.edittshirtsize()'><b>edittshirtsize</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the tshirtsize in participants details</td>
+<td></td>
+<td>24</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.AddParticipantsPage.withoutdataclickingno()'><b>withoutdataclickingno</b><br>Test class: TestCases.AddParticipantsPage<br>Test method: Verify clicking on save details button without entering any data by selecting NO in Are You filling for self?</td>
+<td></td>
+<td>13</td>
+<td>TestCases.AddParticipantsPage@70eecdc2</td></tr>
+<tr>
+<td title='TestCases.ForgotPasswordPage.submitwithoutemailforgotpassword()'><b>submitwithoutemailforgotpassword</b><br>Test class: TestCases.ForgotPasswordPage<br>Test method: Verify clicking on submit button without entering email in forgot password popup </td>
+<td></td>
+<td>4</td>
+<td>TestCases.ForgotPasswordPage@600b0b7</td></tr>
+<tr>
+<td title='TestCases.LoginPage.submitwithinvaliddata()'><b>submitwithinvaliddata</b><br>Test class: TestCases.LoginPage<br>Test method: Verify on clicking submit button by entering credentials which are not registered</td>
+<td></td>
+<td>5</td>
+<td>TestCases.LoginPage@62f87c44</td></tr>
+<tr>
+<td title='TestCases.MarathonSelectionPage.minmarathoncount()'><b>minmarathoncount</b><br>Test class: TestCases.MarathonSelectionPage<br>Test method: Verify user can minimise the count of the marathons using remove button</td>
+<td></td>
+<td>16</td>
+<td>TestCases.MarathonSelectionPage@425357dd</td></tr>
+<tr>
+<td title='TestCases.PaymentSummaryPage.ifinishtermsconditionsclose()'><b>ifinishtermsconditionsclose</b><br>Test class: TestCases.PaymentSummaryPage<br>Test method: Verify the close icon in ifinish terms and conditions popup page </td>
+<td></td>
+<td>23</td>
+<td>TestCases.PaymentSummaryPage@781e7326</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editstate()'><b>editstate</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the state in participants details</td>
+<td></td>
+<td>23</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.PaymentSummaryPage.proceedpaymentbuttonbothterms()'><b>proceedpaymentbuttonbothterms</b><br>Test class: TestCases.PaymentSummaryPage<br>Test method: Verify the proceed to payment button if we select both the terms and conditions check boxes</td>
+<td></td>
+<td>22</td>
+<td>TestCases.PaymentSummaryPage@781e7326</td></tr>
+<tr>
+<td title='TestCases.ForgotPasswordPage.closeforgotpassword()'><b>closeforgotpassword</b><br>Test class: TestCases.ForgotPasswordPage<br>Test method: Verify by clicking on close button in forgot password popup </td>
+<td></td>
+<td>5</td>
+<td>TestCases.ForgotPasswordPage@600b0b7</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editcountry()'><b>editcountry</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the country in participants details</td>
+<td></td>
+<td>24</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editphychallenged()'><b>editphychallenged</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the phychallenged in participants details</td>
+<td></td>
+<td>24</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editfirstname()'><b>editfirstname</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the firstname in participants details</td>
+<td></td>
+<td>24</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.LoginPage.submitwithblankusername()'><b>submitwithblankusername</b><br>Test class: TestCases.LoginPage<br>Test method: Verify on clicking submit button by entering registered password and leaving username as blank</td>
+<td></td>
+<td>5</td>
+<td>TestCases.LoginPage@62f87c44</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editidproof()'><b>editidproof</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the idproof in participants details</td>
+<td></td>
+<td>24</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editdob()'><b>editdob</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the DOB in participants details</td>
+<td></td>
+<td>24</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.PaymentSummaryPage.previousbutton()'><b>previousbutton</b><br>Test class: TestCases.PaymentSummaryPage<br>Test method: Verify the participants page is opened on clicking previous button</td>
+<td></td>
+<td>23</td>
+<td>TestCases.PaymentSummaryPage@781e7326</td></tr>
+<tr>
+<td title='TestCases.ParticipantsEditDeletePage.editnationality()'><b>editnationality</b><br>Test class: TestCases.ParticipantsEditDeletePage<br>Test method: Verify clicking on save details button by editing the nationality in participants details</td>
+<td></td>
+<td>24</td>
+<td>TestCases.ParticipantsEditDeletePage@32f61a31</td></tr>
+<tr>
+<td title='TestCases.LoginPage.submitbuttonwithnodata()'><b>submitbuttonwithnodata</b><br>Test class: TestCases.LoginPage<br>Test method: Verify on clicking submit button without entering data in both the username and password fields</td>
+<td></td>
+<td>4</td>
+<td>TestCases.LoginPage@62f87c44</td></tr>
+<tr>
+<td title='TestCases.AddParticipantsPage.addparticipantyes()'><b>addparticipantyes</b><br>Test class: TestCases.AddParticipantsPage<br>Test method: Verify adding the participant by selecting yes in Are You filling for self?</td>
+<td></td>
+<td>22</td>
+<td>TestCases.AddParticipantsPage@70eecdc2</td></tr>
+<tr>
+<td title='TestCases.PaymentSummaryPage.proceedpaymentbutton()'><b>proceedpaymentbutton</b><br>Test class: TestCases.PaymentSummaryPage<br>Test method: Verify the proceed to payment button is disabled if we dont select any of the check boxes of terms and conditions</td>
+<td></td>
+<td>21</td>
+<td>TestCases.PaymentSummaryPage@781e7326</td></tr>
+<tr>
+<td title='TestCases.AddParticipantsPage.addparticipantno()'><b>addparticipantno</b><br>Test class: TestCases.AddParticipantsPage<br>Test method: Verify adding the participant by selecting NO in Are You filling for self?</td>
+<td></td>
+<td>24</td>
+<td>TestCases.AddParticipantsPage@70eecdc2</td></tr>
+<tr>
+<td title='TestCases.AddParticipantsPage.participantcountafteraddyes()'><b>participantcountafteraddyes</b><br>Test class: TestCases.AddParticipantsPage<br>Test method: Verify participants count shown in the add new participant panel after adding the participant by self filling as yes</td>
+<td></td>
+<td>22</td>
+<td>TestCases.AddParticipantsPage@70eecdc2</td></tr>
+<tr>
+<td title='TestCases.LoginPage.submitwithvaliddata()'><b>submitwithvaliddata</b><br>Test class: TestCases.LoginPage<br>Test method: Verify on clicking submit button by entering registered credentials</td>
+<td></td>
+<td>6</td>
+<td>TestCases.LoginPage@62f87c44</td></tr>
+<tr>
+<td title='TestCases.MarathonSelectionPage.addmarathon()'><b>addmarathon</b><br>Test class: TestCases.MarathonSelectionPage<br>Test method: Verify user is able to add the marathon</td>
+<td></td>
+<td>14</td>
+<td>TestCases.MarathonSelectionPage@425357dd</td></tr>
+</table><p>
+</body>
+</html>
