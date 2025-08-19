@@ -1,3 +1,22 @@
+//---------------------------Fork in Github-----------------------------
+//A fork is a personal copy of someone else’s repository on GitHub. When you fork a repo, you create your own copy where you can freely 
+//experiment, make changes, and develop independently without affecting the original project. Later, you can propose your changes back to 
+//the original repo using a pull request.
+//Technically, forking is meant for copying other people’s repositories, not your own. But if you want a copy of your own repo, you 
+//usually just clone it locally or create a new repo and push your code there.
+//we can do that using copy paste also but if we use fork it
+//Keeps commit history so you keep track of changes over time, You can fetch updates from the original repo and keep your fork up to date
+//Visibility: GitHub clearly shows your repo is a fork, so others know it’s based on the original.
+
+//---------------------------Fork in Postman-----------------------------
+//In Postman, forking creates a copy of a collection or environment, allowing you to work independently without affecting the original. 
+//When you fork a collection, the "Watch original collection" option (enabled by default) lets you receive notifications if any changes 
+//are made to the original. This is useful for staying up to date.
+//Postman clearly marks which collection is the original and which is a fork, helping maintain transparency. Forking also enables 
+//collaboration, allowing multiple team members to work on APIs simultaneously without conflicts. Changes made in the fork can later
+//be merged back into the original using a merge request.
+
+
 //-------------------------------Delete---------------------------
 //Delete removes all rows from a table and keeps the table structure intact.
 //Removes rows from a table based on a condition using a WHERE clause.
