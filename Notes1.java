@@ -4,8 +4,7 @@
 // id-> tagname#id or #id
 // if we dont have any class name or id we have seperate syntax for writing css
 // tagname[attribute='value']
-// tagname[attribute*='value'] - regular css if somepart of the css is
-// dynamically changing
+// tagname[attribute*='value'] - regular css if somepart of the css is dynamically changing
 // writing CSS using tags without any attribute(parent child concept)
 // parenttagname<space>childtagname
 
@@ -68,8 +67,16 @@
 
 //----------------------------Switching windows or tabs--------------------------
 
+//Step 1: Store the main or parent window handle
 //String pw=driver.getWindowHandle();-----Returns the handle of the current window, Return Type- String,Primarily used for storing the handle of the parent window.
+
+// Step 2: Click on a link that opens a new tab/window
+//driver.findElement(By.linkText("Open New Tab")).click();
+
+// Step 3: Get all window handles
 //	Set<String>tw= driver.getWindowHandles();- Returns the handles of all open windows, Return Type- Set<String>, Used when dealing with multiple windows (e.g., child windows, tabs).
+
+// Step 4: Loop through handles and switch to the new one
 //	for(String cw:tw) 
 //	{
 //		if(!cw.equals(pw)) 
@@ -78,9 +85,23 @@
 //			break;
 //		}
 //	}
-//		driver.findElement(By.id("")).click();// perform any action on child window
-//		driver.switchTo().window(pw);
-//		
+// Step 5: Perform actions in the new or child window
+//		driver.findElement(By.id("")).click();
+
+// Step 6: Close the new window and switch back to main
+//driver.close();
+//driver.switchTo().window(pw);
+
+// -------------------Why does Selenium use String as return type for window handle method?-----------------------
+//Selenium gives each tab or window a unique ID (called a window handle).
+//This ID is a String (not an int), like:"CDwindow-6789ADEF56BD90"
+//It's not a number, it’s more like a hash/token.
+
+//---------------2. Why Set<String> for getWindowHandles()?--------------------
+//Set<String> is used because:
+//No duplicates (each handle is unique).
+//You don’t care about order, just want to loop through them.
+	
 
 //----------------To fetch any name from autosuggesive dropdown using streams-------------
 
@@ -171,6 +192,8 @@
 //To skip the particular testcase
 //@Test(enabled = false)
 
+//NoSuchElementException- Selenium never found the element in the first place
+//StaleElementReferenceException- Selenium found the element before, but it later became detached
 
 //groups attributes needs to be configured in xml file and can be suite level and test level
 //@Test(groups = { "Tagname like sanity, smoke etc" })
