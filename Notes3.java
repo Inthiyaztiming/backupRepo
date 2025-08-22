@@ -61,6 +61,14 @@
 //Use Optional in modern Java (Java 8+).
 //Avoid returning null from methods when possible.
 
+//-----------------real time example of Null Pointer Exception-------------
+//If you just declare the WebDriver like this:
+//WebDriver driver;-> in our page object class which contains locators and methods and then immediately pass it into your constructor 
+//without initializing it, like: practiceclass pc = new practiceclass(driver);  // ← `driver` is still null here in test class
+//we'll get a NullPointerException when this line runs:
+//PageFactory.initElements(driver, this);
+
+
 
 //----------------------------Frames--------------------------------------
 //driver.switchTo().parentFrame() moves one level up in the frame hierarchy.
